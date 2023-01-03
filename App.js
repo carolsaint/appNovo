@@ -10,6 +10,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}
       initialRouteName="HomeScreen">
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="AppScreen" component={AppScreen} />
